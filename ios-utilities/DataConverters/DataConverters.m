@@ -133,4 +133,12 @@
     return string;
 }
 
++(NSString *)removeSpecialCharactersFromString:(NSString)stringToFormat{
+    
+    NSCharacterSet *theCharacterSet = [NSCharacterSet characterSetWithCharactersInString:@"+-*!%$/_"];
+    
+    NSString *formattedString = [[stringToFormat componentsSeparatedByCharactersInSet:theCharacterSet] componentsJoinedByString:@""];
+    return formattedString;
+}
+
 @end
