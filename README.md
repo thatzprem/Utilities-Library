@@ -23,4 +23,23 @@ An iOS utility library for data conversion &  data handling operations.
 
 #### In NSDate+Utility:
 1. CalculateTimeDifferenceBetweenDates
+2. IsLaterThanOrEqualTo:(NSDate*)date
+3. IsEarlierThanOrEqualTo
+4. IsLaterThan
+5. IsEarlierThan
 
+#### In NSMutableArray+Queue:
+1. Enqueue
+2. Dequeue
+3. Peek
+4. QueueSize
+5. IsQueueEmpty
+6. ClearQueue
+
+#### In NSMutableArray+Stack:
+1. Push
+2. Pop
+3. Peek
+4. StackSize
+5. IsStackEmpty
+6. ClearStack
