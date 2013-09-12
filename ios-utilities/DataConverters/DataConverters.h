@@ -58,7 +58,7 @@
  @param string @"This+_is*astringwith$special!characters"
  @return NSString @"Thisisastringwithspecialcharacters"
  */
-+(NSString *)removeSpecialCharactersFromString:(NSString)stringToFormat;
++(NSString *)removeSpecialCharactersFromString:(NSString *)stringToFormat;
 
 
 

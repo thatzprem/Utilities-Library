@@ -133,7 +133,7 @@
     return string;
 }
 
-+(NSString *)removeSpecialCharactersFromString:(NSString)stringToFormat{
++(NSString *)removeSpecialCharactersFromString:(NSString *)stringToFormat{
     
     NSCharacterSet *theCharacterSet = [NSCharacterSet characterSetWithCharactersInString:@"+-*!%$/_"];
     
