@@ -10,12 +10,12 @@
 
 @implementation NSMutableArray (Queue)
 
-- (void) enqueue:(id)anObject {
+- (void)enqueue:(id)anObject {
 	
     [self addObject:anObject];
     
 }
-- (id) dequeue {
+- (id)dequeue {
 	
     if ([self count] == 0) {
 		return nil;
@@ -30,13 +30,29 @@
     return headObject;
 }
 
-- (id) peek {
+- (id)peek {
     
     id item = nil;
     if ([self count] != 0) {
         item = [self objectAtIndex:0];
     }
     return item;
+}
+
+
+-(NSInteger)queueSize
+{
+    return [self count];
+}
+
+-(BOOL)isQueueEmpty
+{
+    return [self count] == 0;
+}
+
+-(void)clearQueue
+{
+    [self removeAllObjects];
 }
 
 

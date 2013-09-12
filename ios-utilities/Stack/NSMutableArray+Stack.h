@@ -21,12 +21,30 @@
  It will return and delete the last object in the NSMutableArray.
  @return id, returns the last object from the NSMutableArray
  */
-- (id) pop;
+- (id)pop;
 
 /**
  It will return (but do not delete) the last object in the NSMutableArray.
  @return id, returns the last object from the NSMutableArray
  */
-- (id) peek;
+- (id)peek;
+
+/**
+ It will provide the number of object in the stack.
+ @return NSInteger, returns the objects count.
+ */
+- (NSInteger)stackSize;
+
+/**
+ It will check if the stack is enmpty or not
+ @return BOOL Yes, if empty
+ */
+- (BOOL)isStackEmpty;
+
+/**
+ It will remove all the elements in stack
+ @return void
+ */
+- (void)clearStack;
 
 @end

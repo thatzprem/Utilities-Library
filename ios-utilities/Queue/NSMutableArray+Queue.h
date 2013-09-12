@@ -15,19 +15,35 @@
  @param obj, the object to add to the queue
  @return void
  */
-- (void) enqueue:(id)obj;
+- (void)enqueue:(id)obj;
 
 /**
  It will return and delete the first object in the NSMutableArray.
  @return id, returns the first object from the NSMutableArray
  */
-- (id) dequeue;
+- (id)dequeue;
 
 /**
  It will return (but do not delete) the first object in the NSMutableArray.
  @return id, returns the first object from the NSMutableArray
  */
-- (id) peek;
+- (id)peek;
 
+/**
+ It will provide the number of object in the queue.
+ @return NSInteger, returns the objects count.
+ */
+-(NSInteger)queueSize;
 
+/**
+ It will check if the queue is empty or not
+ @return BOOL Yes, if empty
+ */
+-(BOOL)isQueueEmpty;
+
+/**
+ It will remove all the elements in queue
+ @return void
+ */
+-(void)clearQueue;
 @end

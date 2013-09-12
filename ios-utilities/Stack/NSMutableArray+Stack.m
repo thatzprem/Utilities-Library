@@ -10,11 +10,13 @@
 
 @implementation NSMutableArray (Stack)
 
-- (void) push: (id)object {
+- (void)push:(id)object
+{
     [self addObject:object];
 }
 
-- (id) pop {
+- (id)pop
+{
     id object = nil;
     if ([self count] != 0) {
         object = [self lastObject];
@@ -23,12 +25,28 @@
     return object;
 }
 
-- (id) peek {
+- (id)peek
+{
     id object = nil;
     if ([self count] != 0) {
         object = [self lastObject];
     }
     return object;
+}
+
+- (NSInteger)stackSize
+{
+    return [self count];
+}
+
+- (BOOL)isStackEmpty
+{
+    return [self count] == 0;
+}
+
+- (void)clearStack
+{
+    [self removeAllObjects];
 }
 
 @end
