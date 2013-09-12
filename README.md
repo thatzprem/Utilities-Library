@@ -11,6 +11,7 @@ An iOS utility library for data conversion &  data handling operations.
 4. IsObjectEmpty
 5. RemoveEndSpaceFromString
 6. ConvertSequencesOfWhiteSpaceIntoSingleCharacter
+7. RemoveSpecialCharactersFromString
 
 #### In File Handler:
 1. Check if the file, or directory, exists in the given path
@@ -19,3 +20,7 @@ An iOS utility library for data conversion &  data handling operations.
 4. Get the size of a file
 5. Check if a file with that name exists in the folder
 6. check if this folder has more subfolder or if it's the last folder
+
+#### In NSDate+Utility:
+1. CalculateTimeDifferenceBetweenDates
+
