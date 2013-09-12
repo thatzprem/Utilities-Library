@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0CADF817E1A08600A7EE6A /* NSDate+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CADF717E1A08600A7EE6A /* NSDate+Utility.m */; };
 		3B144B0317C4BBFE0024D02C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B144B0217C4BBFE0024D02C /* Foundation.framework */; };
 		3B144B1217C4BC4B0024D02C /* DataConverters.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B144B1117C4BC4B0024D02C /* DataConverters.m */; };
 		3B144B1517C4BC770024D02C /* DataHandlers.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B144B1417C4BC770024D02C /* DataHandlers.m */; };
@@ -31,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B0CADF617E1A08600A7EE6A /* NSDate+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utility.h"; sourceTree = "<group>"; };
+		3B0CADF717E1A08600A7EE6A /* NSDate+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utility.m"; sourceTree = "<group>"; };
 		3B144AFF17C4BBFE0024D02C /* libios-utilities.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libios-utilities.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B144B0217C4BBFE0024D02C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B144B0617C4BBFE0024D02C /* ios-utilities-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ios-utilities-Prefix.pch"; sourceTree = "<group>"; };
@@ -53,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0CADF517E1A04500A7EE6A /* DateUtility */ = {
+			isa = PBXGroup;
+			children = (
+				3B0CADF617E1A08600A7EE6A /* NSDate+Utility.h */,
+				3B0CADF717E1A08600A7EE6A /* NSDate+Utility.m */,
+			);
+			path = DateUtility;
+			sourceTree = "<group>";
+		};
 		3B144AF617C4BBFE0024D02C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +93,7 @@
 		3B144B0417C4BBFE0024D02C /* ios-utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3B0CADF517E1A04500A7EE6A /* DateUtility */,
 				3BA8AF8517C5E86500778671 /* OtherResources */,
 				3BA8AF8417C5E85600778671 /* DataConverters */,
 				3BA8AF8317C5E84600778671 /* DataHandlers */,
@@ -176,6 +189,7 @@
 			files = (
 				3B144B1217C4BC4B0024D02C /* DataConverters.m in Sources */,
 				3B144B1517C4BC770024D02C /* DataHandlers.m in Sources */,
+				3B0CADF817E1A08600A7EE6A /* NSDate+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
