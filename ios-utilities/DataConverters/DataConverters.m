@@ -13,7 +13,7 @@
 
 +(NSDictionary *)convertManagedObjectToDictionary:(NSManagedObject *)managedObject{
     
-    if (managedObject){
+    if (!managedObject){
         NSLog(@"Managed object is nil");
         return nil;
     }
